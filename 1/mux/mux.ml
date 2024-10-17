@@ -9,6 +9,14 @@ let mux2 s0 a b =
   else b
 
 (*Metodo 3*)
-let mux3 s0 a b = match (s0,a,b) with
-| (true, _, _) -> a
-| (false, _, _) -> b
+let mux3 s0 a b = match (s0) with
+| (true) -> a
+| (false) -> b
+
+(*Metodo 4*)
+let mux4 (s1 : bool) (s0 : bool) (a0 : bool) (a1 : bool) (a2 : bool) (a3 : bool) : bool =
+  match(s1, s0) with
+  | (false, false) -> a0
+  | (false, true) -> a1
+  | (true, false) -> a2
+  | (true, true) -> a3
