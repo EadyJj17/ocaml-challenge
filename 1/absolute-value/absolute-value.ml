@@ -3,3 +3,8 @@ let abs (a : int) : int =
         a * (-1)
 else
     a
+
+let abs2 (a : int) : int =
+    match a with
+    |   a when (a > 0) -> a
+    |   a -> -a
