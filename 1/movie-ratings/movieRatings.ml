@@ -4,8 +4,8 @@ let movie_rating (r1 : int) (r2 : int) (r3 : int) : string =
   else if (r1 == 5 && r2 == 5 && r3 == 5) then
     "Masterpiece"
   else if (r1 == 5 && r2 == 5 && r3 == 4
-          || r1 == 5 && r2 == 4 && r3 == 5
-          || r1 == 4 && r2 == 5 && r3 == 5) then
+        || r1 == 5 && r2 == 4 && r3 == 5
+        || r1 == 4 && r2 == 5 && r3 == 5) then
     "Highly Recommended"
   else if (r1 >= 4 && r2 >= 4 && r3 >= 3 && r3 <= 5
         || r1 >= 4 && r2 >= 3 && r2 <= 5 && r3 >= 4
